@@ -1,14 +1,8 @@
 object problem2 {
   
   def main(args: Array[String]): Unit = {
-    var s = 0
-    var i = 1
-    while (s < 4000000) {
-      val f = fib(i)
-      if (f%2==0) s += f
-      i += 1
-    }
-    println(s)
+    val fibs = for (a <- 1 until 4000000) yield fib(a)
+    println(fibs.sum)
   }
   
   def fib(a: Int): Int = {
