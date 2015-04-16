@@ -1,7 +1,9 @@
-object problem3 {
+import scala.collection.mutable.ListBuffer
+
+object problem003 {
   
   def main(args: Array[String]): Unit = {
-    var n = 600851475143L
+    val n = 600851475143L
     var i = 1L
     while (i < n) {
       
