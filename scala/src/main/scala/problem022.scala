@@ -1,6 +1,5 @@
 import java.util.Base64
 import scala.io.Source
-import scala.reflect.io.Streamable.Bytes
 
 object problem022 {
 
